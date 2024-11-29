@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendations</title>
+</head>
+<body>
+    <h1>Content-Based Recommendations</h1>
+    <ul>
+        {% for book in content_recommendations %}
+            <li>{{ book }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h1>Collaborative Filtering Recommendations</h1>
+    <ul>
+        {% for book in collaborative_recommendations %}
+            <li>{{ book }}</li>
+        {% endfor %}
+    </ul>
+    
+    <a href="/">Go Back</a>
+</body>
+</html>
